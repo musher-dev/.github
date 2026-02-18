@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://musher.dev">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/musher-dev/brand/main/dist/social/github/musher-social-github-preview-640.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/musher-dev/brand/main/dist/social/github/musher-social-github-preview-640.png">
-      <img alt="Musher" src="https://raw.githubusercontent.com/musher-dev/brand/main/dist/social/github/musher-social-github-preview-640.png" width="640">
+      <source media="(prefers-color-scheme: dark)" srcset="../images/banner.png">
+      <source media="(prefers-color-scheme: light)" srcset="../images/banner.png">
+      <img alt="Musher" src="../images/banner.png" width="640">
     </picture>
   </a>
 </p>
