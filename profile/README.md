@@ -3,7 +3,7 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="../images/banner.png">
       <source media="(prefers-color-scheme: light)" srcset="../images/banner.png">
-      <img alt="Musher" src="../images/banner.png" width="640">
+      <img alt="Musher" src="../images/banner.png" width="100%">
     </picture>
   </a>
 </p>
