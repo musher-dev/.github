@@ -1,0 +1,35 @@
+name: "💡 Feature Request"
+description: "Propose a new feature or enhancement."
+title: "[Feature]: "
+labels: ["needs-triage"]
+type: "Feature"
+projects: ["musher-dev/1"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What is the user pain point or technical constraint? Why now?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired Outcome
+      description: The specific, measurable result of this work.
+    validations:
+      required: true
+  - type: textarea
+    id: nongoals
+    attributes:
+      label: Non-Goals (Out of Scope)
+      description: Explicitly state what should NOT be built.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Testable conditions for completion.
+    validations:
+      required: true
