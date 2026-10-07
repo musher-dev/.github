@@ -1,0 +1,27 @@
+name: "📋 Task"
+description: "A slice of implementation work we scoped ourselves, sized to 1-3 days."
+title: "[Task]: <outcome>"
+labels: ["needs-triage"]
+type: "Task"
+projects: ["musher-dev/1"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Goal"
+      description: "What is true once this is done? One outcome; split anything larger than 1-3 days."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance Criteria"
+      description: "Testable conditions. Each must be checkable by someone who didn't write the code."
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: "Links to the parent issue, decision record or discussion that motivated this."

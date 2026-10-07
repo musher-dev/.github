@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/musher-dev/.github/blob/main/SECURITY.md
+    about: Report privately. Do not open a public issue for a vulnerability.
+  - name: 💬 Questions and help
+    url: https://discord.gg/SaVMzMgX2c
+    about: Ask the Musher community and team on Discord.
+  - name: 📖 Documentation
+    url: https://docs.musher.dev
+    about: Guides and reference for deploying and running agent stacks on Musher.

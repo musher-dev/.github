@@ -1,0 +1,19 @@
+# This repository's identity declaration (EC-0009). `.github` is reserved by
+# GitHub and exempt from the naming convention; it holds the organization's
+# profile and its default community health files.
+schema_version = 1
+name = ".github"
+system = "engineering"
+component = "github"
+kind = "documentation"
+owner = "@musher-dev/engineering"
+lifecycle = "production"
+audience = "public"
+visibility = "public"
+# 2: the default issue forms and policies stop Musher's own work if they break,
+# not customers'.
+tier = 2
+
+# No product directory: GitHub fixes where every file here lives.
+[layout]
+product = ""
