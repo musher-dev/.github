@@ -1,19 +1,20 @@
+<!-- markdownlint-disable MD033 MD041 -- GitHub profile layout: a centered banner needs inline HTML. -->
+
 <p align="center">
   <a href="https://musher.dev">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="../images/banner.png">
-      <source media="(prefers-color-scheme: light)" srcset="../images/banner.png">
-      <img alt="Musher" src="../images/banner.png" width="100%">
-    </picture>
+    <img alt="Musher" src="../images/banner.png" width="100%">
   </a>
 </p>
 
 <p align="center">
-  <strong>AI-powered software delivery.</strong><br>
-  Direct your fleet of coding agents from issue to merge.
+  <strong>The Infrastructure of Execution.</strong><br>
+  Musher runs agent stacks: the workflow engines, model gateways, vector stores and chat tools you wire together so
+  software can act on your behalf.
 </p>
 
 <p align="center">
   <a href="https://musher.dev">Website</a> &middot;
-  <a href="https://discord.gg/SaVMzMgX2c">Discord</a>
+  <a href="https://docs.musher.dev">Docs</a> &middot;
+  <a href="https://discord.gg/SaVMzMgX2c">Discord</a> &middot;
+  <a href="https://x.com/musherdev">X</a>
 </p>

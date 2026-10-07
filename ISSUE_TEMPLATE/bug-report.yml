@@ -1,25 +1,37 @@
 name: "🐛 Bug Report"
-description: "Report a defect in existing functionality."
-title: "[Bug]: "
+description: "Something that used to work stopped working. Evidence over adjectives."
+title: "[Bug]: <observed failure>"
 labels: ["needs-triage"]
 type: "Bug"
 projects: ["musher-dev/1"]
 body:
   - type: textarea
-    id: what
+    id: happened
     attributes:
-      label: What happened
+      label: "What happened"
+      description: >-
+        The observed behaviour. Include the exact error text or a screenshot; a paraphrase cannot be grepped.
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected behavior
+      label: "Expected behavior"
+      description: >-
+        What should have happened instead, and why you expected it (a doc page, an API contract, prior
+        behaviour).
     validations:
       required: true
   - type: textarea
-    id: repro
+    id: steps
     attributes:
-      label: Reproduction steps
+      label: "Reproduction steps"
+      description: "The minimal sequence that triggers it. A bug that cannot be reproduced cannot be verified as fixed."
+      value: "1. "
     validations:
       required: true
+  - type: input
+    id: impact
+    attributes:
+      label: "Impact / severity"
+      placeholder: "e.g. blocks every deploy; cosmetic on one page"

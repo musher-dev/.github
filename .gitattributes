@@ -1,0 +1,7 @@
+# Normalize line endings: checkouts on Windows drives (including WSL paths under
+# /mnt/c) would otherwise rewrite every file to CRLF and show phantom diffs.
+* text=auto eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.toml text eol=lf
+*.png  binary

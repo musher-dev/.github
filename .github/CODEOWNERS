@@ -1,0 +1,15 @@
+# CODEOWNERS
+#
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# One owner for the whole repository: these files are the organization's
+# defaults, so every change to them is reviewed by the same steward.
+#
+# Syntax rules that bite:
+#   - LAST matching pattern wins — order from broad to specific.
+#   - ALL owners for a pattern go on ONE line.
+#   - Owners need EXPLICIT write access to this repo, or the entry is silently
+#     ignored and the path becomes unowned.
+#   - Individual @handles until GitHub teams (@musher-dev/<team>) exist.
+
+*    @justinmerrell
