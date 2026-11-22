@@ -1,15 +1,40 @@
-# CODEOWNERS
+# CODEOWNERS: the ownership half of the selective code-owner review gate
 #
 # Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# The standard is musher-dev/platform ADR 0134, checked by engineering-conventions
+# COMM-09 (no `*` catch-all) and COMM-10 (every anchored path exists). The other
+# half is the organization ruleset's `require_code_owner_review`
+# (musher-dev/infra-github#57).
 #
-# One owner for the whole repository: these files are the organization's
-# defaults, so every change to them is reviewed by the same steward.
+# How review works here:
+#
+#   A pull request that touches NO path listed below merges on green CI alone:
+#   the required checks are the gate. A pull request that touches a listed path
+#   also needs its owner's approval. GitHub waives that on the owner's own pull
+#   requests.
+#
+# What is owned, and why:
+#   /.github/   the gate itself: this file
+#   /.repo/     this repository's identity declaration
+#   /profile/   the organization's public profile page on github.com
+#
+# Everything else is unowned on purpose, the default community health files and
+# docs included. Listing a path is a commitment to review every change to it,
+# so keep the list short.
 #
 # Syntax rules that bite:
-#   - LAST matching pattern wins — order from broad to specific.
+#   - NEVER add a `*` catch-all (COMM-09). It makes every pull request
+#     codeowned and brings back blanket review of the whole repository.
+#   - LAST matching pattern wins: order from broad to specific.
 #   - ALL owners for a pattern go on ONE line.
 #   - Owners need EXPLICIT write access to this repo, or the entry is silently
-#     ignored and the path becomes unowned.
-#   - Individual @handles until GitHub teams (@musher-dev/<team>) exist.
+#     ignored and the path becomes unowned. @musher-dev/engineering owns this
+#     repository (musher-dev/infra-github data/managed-repositories.yaml).
+#     GitHub lists ignored lines at
+#     `gh api repos/musher-dev/.github/codeowners/errors`.
+#   - A root-anchored path must exist (COMM-10): after a rename, the old line
+#     protects nothing.
 
-*    @justinmerrell
+/.github/   @musher-dev/engineering
+/.repo/     @musher-dev/engineering
+/profile/   @musher-dev/engineering
